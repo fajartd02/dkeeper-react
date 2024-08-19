@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "dkeeper_react_icp_backend": {
-      "main": "src/dkeeper_react_icp_backend/main.mo",
+    "dkeeper_backend": {
+      "main": "src/dkeeper_backend/main.mo",
       "type": "motoko"
     },
-    "dkeeper_react_icp_frontend": {
+    "dkeeper_frontend": {
       "dependencies": [
-        "dkeeper_react_icp_backend"
+        "dkeeper_backend"
       ],
       "frontend": {
-        "entrypoint": "src/dkeeper_react_icp_frontend/src/index.html"
+        "entrypoint": "src/dkeeper_frontend/src/index.html"
       },
       "source": [
-        "src/dkeeper_react_icp_frontend/assets",
-        "dist/dkeeper_react_icp_frontend/"
+        "src/dkeeper_frontend/assets",
+        "dist/dkeeper_frontend/"
       ],
       "type": "assets"
     }
